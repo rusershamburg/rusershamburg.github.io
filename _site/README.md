@@ -47,6 +47,12 @@ and it should contain a YAML-header like this:
 
 ```r
 blogdown::build_dir("rmd_posts/")
+fnames <- list.files("rmd_posts/", pattern = "\\.Rmd", full.names = TRUE)
+for ( i in seq_len(fnames) ){
+  rmd_content <- readLines(fnames[i])
+  md_content  <- readLines(gsub("\\.Rmd$", ".md", fnames[i]))
+}
+
 file.copy(
   from      = list.files("rmd_posts/", pattern = "\\.md", full.names = TRUE), 
   to        = "_posts/", 
