@@ -46,18 +46,27 @@ and it should contain a YAML-header like this:
 **(1) re-building r-markdown**
 
 ```r
-blogdown::build_dir("rmd_posts/")
-fnames <- list.files("rmd_posts/", pattern = "\\.Rmd", full.names = TRUE)
-for ( i in seq_len(fnames) ){
-  rmd_content <- readLines(fnames[i])
-  md_content  <- readLines(gsub("\\.Rmd$", ".md", fnames[i]))
-}
+# rebuild all Rmd-Posts
+blogdown::build_dir("rmd_posts/", force = FALSE)
 
-file.copy(
-  from      = list.files("rmd_posts/", pattern = "\\.md", full.names = TRUE), 
-  to        = "_posts/", 
-  overwrite = TRUE
-)
+# pass along yaml-header and save md file in _posts folder
+fnames <- list.files("rmd_posts/", pattern = "\\.Rmd", full.names = TRUE)
+for ( i in seq_along(fnames) ){
+  rmd_content <- readLines(fnames[i])
+  rmd_content_yaml_borders <- grep("^---", rmd_content)[1:2]
+  
+  md_content     <- readLines(gsub("\\.Rmd$", ".md", fnames[i]))
+  md_content_new <- 
+   c(
+    rmd_content[seq(rmd_content_yaml_borders[1], rmd_content_yaml_borders[2])],
+    md_content
+   )
+   
+  writeLines(
+    md_content_new, 
+    paste0("_posts/", basename(gsub("\\.Rmd$", ".md", fnames[i])))
+  )
+}
 ```
 
 **(2) re-building page**
