@@ -34,15 +34,41 @@ Simple Markdown post can be added by addin a markdown file to `_posts` folder.
 The document should have a file name of format: `YYYY-MM-DD-name-of-the-post` 
 and it should contain a YAML-header like this:
 
+```yaml
+---
+title: "Up and Running"
+date: "2018-03-11 13:16:01"
+categories: blog
+tags: 
+    - log
+---
+```
 
+... or like this ...
+
+```yaml
+---
+title:  "Up and running"
+date:   2018-02-11 13:16:01
+categories: blog
+tags:
+    - rstats
+    - robotstxt
+---
+```
+
+The former will appear in feed.xml as atom feed while the latter will appear in 
+feed.xml as well as in feed_r.xml. 
 
 
 - https://jekyllrb.com/docs/posts/
 
 
+
+
 ### Building Page
 
-
+<!-- 
 **(1) re-building r-markdown**
 
 ```r
@@ -69,13 +95,15 @@ for ( i in seq_along(fnames) ){
   )
 }
 ```
+-->
 
-**(2) re-building page**
+**re-building page**
 
 ```bash
 jekyll build
 ```
 
+<!--
 **(3) adding resources for r-makrdown posts**
 
 ```r
@@ -98,3 +126,4 @@ for( i in seq_along(rmd_post_folders) ){
 }
 
 ```
+--> 

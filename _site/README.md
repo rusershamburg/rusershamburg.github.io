@@ -34,20 +34,46 @@ Simple Markdown post can be added by addin a markdown file to `_posts` folder.
 The document should have a file name of format: `YYYY-MM-DD-name-of-the-post` 
 and it should contain a YAML-header like this:
 
+```yaml
+---
+title: "Up and Running"
+date: "2018-03-11 13:16:01"
+categories: blog
+tags: 
+    - log
+---
+```
 
+... or like this ...
+
+```yaml
+---
+title:  "Up and running"
+date:   2018-02-11 13:16:01
+categories: blog
+tags:
+    - rstats
+    - robotstxt
+---
+```
+
+The former will appear in feed.xml as atom feed while the latter will appear in 
+feed.xml as well as in feed_r.xml. 
 
 
 - https://jekyllrb.com/docs/posts/
 
 
+
+
 ### Building Page
 
-
+<!-- 
 **(1) re-building r-markdown**
 
 ```r
 # rebuild all Rmd-Posts
-blogdown::build_dir("rmd_posts/", force = FALSE)
+blogdown::build_dir("rmd_posts/", force = TRUE)
 
 # pass along yaml-header and save md file in _posts folder
 fnames <- list.files("rmd_posts/", pattern = "\\.Rmd", full.names = TRUE)
@@ -69,13 +95,15 @@ for ( i in seq_along(fnames) ){
   )
 }
 ```
+-->
 
-**(2) re-building page**
+**re-building page**
 
 ```bash
 jekyll build
 ```
 
+<!--
 **(3) adding resources for r-makrdown posts**
 
 ```r
@@ -85,15 +113,17 @@ for( i in seq_along(rmd_post_folders) ){
   month <- gsub("(\\d{4})-(\\d{2})-(\\d{2})-*(.*)", "\\2", basename(rmd_post_folders[i]) )
   day   <- gsub("(\\d{4})-(\\d{2})-(\\d{2})-*(.*)", "\\3", basename(rmd_post_folders[i]) )
   title <- gsub("(\\d{4})-(\\d{2})-(\\d{2})-*(.*)", "\\4", basename(rmd_post_folders[i]) )
+  title <- gsub("_files$", "", title )
   to    <- paste("_site/blog", year, month, day, title, sep = "/")
   
   dir.create(path = to, showWarnings = FALSE, recursive = TRUE)
   file.copy(
-    from = list.dirs("rmd_posts/", recursive = FALSE, full.names = TRUE),
-    to   = paste(year, month, day, title, sep = "/"),
+    from = rmd_post_folders[i],
+    to   = to,
     overwrite = TRUE, 
     recursive = TRUE
   )
 }
 
 ```
+--> 

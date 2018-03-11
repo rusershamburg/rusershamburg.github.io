@@ -1,14 +1,9 @@
 ---
-output: github_document
-title: "Up and Running - Rmd"
+title: "Up and Running"
 date: "2018-03-11 13:16:01"
 tags: log
 categories: blog
 ---
-
-Up and Running
-================
-2018-03-11 13:16:01
 
 A first blog post that will get deleted once all things are set up and
 run
