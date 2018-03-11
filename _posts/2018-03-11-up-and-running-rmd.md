@@ -6,6 +6,8 @@ tags: log
 categories: blog
 ---
 
+
+Up and Running - Rmd
 ================
 2018-03-11 13:16:01
 

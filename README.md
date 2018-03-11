@@ -47,7 +47,7 @@ and it should contain a YAML-header like this:
 
 ```r
 # rebuild all Rmd-Posts
-blogdown::build_dir("rmd_posts/", force = FALSE)
+blogdown::build_dir("rmd_posts/", force = TRUE)
 
 # pass along yaml-header and save md file in _posts folder
 fnames <- list.files("rmd_posts/", pattern = "\\.Rmd", full.names = TRUE)
@@ -79,10 +79,22 @@ jekyll build
 **(3) adding resources for r-makrdown posts**
 
 ```r
-file.copy(
-  from = list.dirs("rmd_posts/", recursive = FALSE, full.names = TRUE),
-  to   = "_site",
-  overwrite = TRUE, 
-  recursive = TRUE
-)
+rmd_post_folders <- list.dirs("rmd_posts/", recursive = FALSE, full.names = TRUE)
+for( i in seq_along(rmd_post_folders) ){
+  year  <- gsub("(\\d{4})-(\\d{2})-(\\d{2})-*(.*)", "\\1", basename(rmd_post_folders[i]) )
+  month <- gsub("(\\d{4})-(\\d{2})-(\\d{2})-*(.*)", "\\2", basename(rmd_post_folders[i]) )
+  day   <- gsub("(\\d{4})-(\\d{2})-(\\d{2})-*(.*)", "\\3", basename(rmd_post_folders[i]) )
+  title <- gsub("(\\d{4})-(\\d{2})-(\\d{2})-*(.*)", "\\4", basename(rmd_post_folders[i]) )
+  title <- gsub("_files$", "", title )
+  to    <- paste("_site/blog", year, month, day, title, sep = "/")
+  
+  dir.create(path = to, showWarnings = FALSE, recursive = TRUE)
+  file.copy(
+    from = rmd_post_folders[i],
+    to   = to,
+    overwrite = TRUE, 
+    recursive = TRUE
+  )
+}
+
 ```

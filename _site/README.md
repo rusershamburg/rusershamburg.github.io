@@ -59,6 +59,7 @@ for ( i in seq_along(fnames) ){
   md_content_new <- 
    c(
     rmd_content[seq(rmd_content_yaml_borders[1], rmd_content_yaml_borders[2])],
+    "","",
     md_content
    )
    
@@ -78,10 +79,21 @@ jekyll build
 **(3) adding resources for r-makrdown posts**
 
 ```r
-file.copy(
-  from = list.dirs("rmd_posts/", recursive = FALSE, full.names = TRUE),
-  to   = "_site",
-  overwrite = TRUE, 
-  recursive = TRUE
-)
+rmd_post_folders <- list.dirs("rmd_posts/", recursive = FALSE, full.names = TRUE)
+for( i in seq_along(rmd_post_folders) ){
+  year  <- gsub("(\\d{4})-(\\d{2})-(\\d{2})-*(.*)", "\\1", basename(rmd_post_folders[i]) )
+  month <- gsub("(\\d{4})-(\\d{2})-(\\d{2})-*(.*)", "\\2", basename(rmd_post_folders[i]) )
+  day   <- gsub("(\\d{4})-(\\d{2})-(\\d{2})-*(.*)", "\\3", basename(rmd_post_folders[i]) )
+  title <- gsub("(\\d{4})-(\\d{2})-(\\d{2})-*(.*)", "\\4", basename(rmd_post_folders[i]) )
+  to    <- paste("_site/blog", year, month, day, title, sep = "/")
+  
+  dir.create(path = to, showWarnings = FALSE, recursive = TRUE)
+  file.copy(
+    from = list.dirs("rmd_posts/", recursive = FALSE, full.names = TRUE),
+    to   = paste(year, month, day, title, sep = "/"),
+    overwrite = TRUE, 
+    recursive = TRUE
+  )
+}
+
 ```
