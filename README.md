@@ -59,6 +59,7 @@ for ( i in seq_along(fnames) ){
   md_content_new <- 
    c(
     rmd_content[seq(rmd_content_yaml_borders[1], rmd_content_yaml_borders[2])],
+    "","",
     md_content
    )
    

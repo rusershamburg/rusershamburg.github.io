@@ -81,4 +81,3 @@ summary(cars)
     ##  3rd Qu.:19.0   3rd Qu.: 56.00  
     ##  Max.   :25.0   Max.   :120.00
 
-![](2018-03-11-up-and-running_files/figure-gfm/pressure-1.png)<!-- -->
