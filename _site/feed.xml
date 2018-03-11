@@ -3,34 +3,12 @@
 <generator uri="http://jekyllrb.com" version="3.7.3">Jekyll</generator>
 <link href="https://rusershamburg.github.io/feed.xml" rel="self" type="application/atom+xml" />
 <link href="https://rusershamburg.github.io/" rel="alternate" type="text/html" />
-<updated>2018-03-11T19:33:46+01:00</updated>
+<updated>2018-03-11T20:02:05+01:00</updated>
 <id>https://rusershamburg.github.io/</id>
 <subtitle>R Users Hamburg</subtitle>
 <author>
 <name>rusershamburg</name>
 </author>
-<entry>
-<title>Up and Running</title>
-<link href="https://rusershamburg.github.io/blog/2018/03/11/up-and-running/" rel="alternate" type="text/html" title="Up and Running" />
-<published>2018-03-11T13:16:01+01:00</published>
-<updated>2018-03-11T13:16:01+01:00</updated>
-<id>https://rusershamburg.github.io/blog/2018/03/11/up-and-running</id>
-<content type="html" xml:base="https://rusershamburg.github.io/blog/2018/03/11/up-and-running/">&lt;p&gt;A first blog post that will get deleted once all things are set up and run&lt;/p&gt;
-
-&lt;p&gt;```{r cars}
-cars&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-```{r cars summary}
-summary(cars)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;{r pressure, echo=FALSE}
-plot(pressure)
-&lt;/code&gt;&lt;/p&gt;
-</content>
-<category term="log" />
-<summary>A first blog post that will get deleted once all things are set up and run```{r cars}cars```{r cars summary}summary(cars)</summary>
-</entry>
 <entry>
 <title>Up And Running</title>
 <link href="https://rusershamburg.github.io/2018/03/11/up-and-running/" rel="alternate" type="text/html" title="Up And Running" />
