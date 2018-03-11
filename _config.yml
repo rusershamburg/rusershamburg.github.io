@@ -1,0 +1,40 @@
+title: "R Users Hamburg"
+author: "rusershamburg"
+description: "R Users Hamburg"
+more: "... read more »"
+url: ""
+baseurl: "https://rusershamburg.github.io"
+paginate: 10
+permalink: pretty
+excerpt_separator: "\n\n\n" # two blank lines
+plugins: [jekyll-feed, jekyll-paginate]
+
+style:
+  minimalist: false
+  dark: false
+
+navigation:
+  - index.html
+  - about.md
+  - archive.html
+
+#comments: 
+#  disqus: "rusershamburg-de"
+#  isso: "comments.mysite.org"
+
+links: # see http://fontawesome.io/icons/#brand for all possible icons
+  - twitter: "https://twitter.com/rusershamburg"
+  - github: "https://github.com/rusershamburg"
+  - envelope: "https://www.meetup.com/Hamburg-R-User-Group/"
+
+defaults: [
+  {
+    scope: {path: ""}, 
+    values: {layout: "default"}
+  }, 
+  {
+    scope: {path: "", type: "posts"}, 
+    values: {comments: true}
+    }
+  ]
+sass: {style: expanded}

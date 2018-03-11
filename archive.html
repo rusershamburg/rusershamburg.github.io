@@ -1,0 +1,23 @@
+---
+title: "Archive"
+layout: blank
+---
+<main class="archive">
+  <article>
+    {%- for post in site.posts -%}
+      {%- if post.next -%}
+        {%- assign year = post.date | date: '%Y' -%}
+        {%- assign prev_year = post.next.date | date: '%Y' -%}
+        {%- if year != prev_year -%}
+          <h1>{{ post.date | date: '%Y' }}</h1>
+        {%- endif -%}
+      {%- else -%}
+        <h1>{{ post.date | date: '%Y' }}</h1>
+      {%- endif -%}
+      <li>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> 
+        [ {{ post.tags }} ]
+        </li>
+    {%- endfor -%}
+  </article>
+</main>
