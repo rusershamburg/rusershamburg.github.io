@@ -3,8 +3,8 @@
 <meta charset="utf-8">
 <meta name="author" content="rusershamburg">
 <meta name="description" content="R Users Hamburg">
-<title> Archive › R Users Hamburg</title>
-<link rel="canonical" href="https://rusershamburg.github.io/archive/">
+<title> Up and Running - Rmd › R Users Hamburg</title>
+<link rel="canonical" href="https://rusershamburg.github.io/rmd_posts/2018-03-11-up-and-running-rmd.Rmd">
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="https://rusershamburg.github.io/basic.css" rel="stylesheet">
@@ -20,14 +20,35 @@
     <div><a href="https://twitter.com/rusershamburg"><i class="fa fa-twitter"></i></a><a href="https://github.com/rusershamburg"><i class="fa fa-github"></i></a><a href="https://www.meetup.com/Hamburg-R-User-Group/"><i class="fa fa-envelope"></i></a></div>
   </nav>
 </header>
-<main class="archive">
-  <article><h1>2018</h1><li>
-        <a href="https://rusershamburg.github.io/2018/03/11/up-and-running/">Up And Running</a> 
-        [  ]
-        </li><li>
-        <a href="https://rusershamburg.github.io/2018/03/11/up-and-running-rmd/">Up And Running Rmd</a> 
-        [  ]
-        </li></article>
+<main>
+  <article>
+    <header>
+      <h1><a href="https://rusershamburg.github.io/rmd_posts/2018-03-11-up-and-running-rmd.Rmd">Up and Running - Rmd</a></h1>
+      <time datetime="2018-03-11T13:16:01+01:00">March 11, 2018</time>
+      <p><tag>
+              [ log ]
+            </tag></p>
+    </header>
+    <div>
+A first blog post that will get deleted once all things are set up and run
+
+```{r cars}
+cars
+```
+
+```{r cars summary}
+summary(cars)
+```
+
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+    </div>
+    
+    
+  </article>
 </main>
 
 
