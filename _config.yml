@@ -38,3 +38,5 @@ defaults: [
     }
   ]
 sass: {style: expanded}
+exclude: [rmd_posts]
+
