@@ -127,3 +127,9 @@ for( i in seq_along(rmd_post_folders) ){
 
 ```
 --> 
+
+
+### Deployment
+
+Pushing to master branch of rusershamburg.github.io repo will result in an 
+update of https://rusershamburg.github.io with approximatly 10-20 seconds delay.

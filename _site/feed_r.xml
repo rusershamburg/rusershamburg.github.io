@@ -4,7 +4,7 @@
     <title>R Users Hamburg</title>
     <description>R Users Hamburg</description>
     <link></link>
-    <atom:link href="/feed_r.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rusershamburg.github.io/feed_r.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

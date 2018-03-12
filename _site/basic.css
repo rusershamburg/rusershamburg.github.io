@@ -37,6 +37,10 @@ article a {
   color: #68f;
 }
 
+header .fa {
+  font-size: 150%;
+}
+
 header a, footer a {
   color: inherit;
   font-weight: 300;

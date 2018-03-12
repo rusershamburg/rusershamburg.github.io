@@ -2,9 +2,10 @@ title: "R Users Hamburg"
 author: "rusershamburg"
 description: "R Users Hamburg"
 more: "... read more »"
-url: ""
-baseurl: "https://rusershamburg.github.io"
+url: "https://rusershamburg.github.io"
+#baseurl: "/"
 paginate: 10
+paginate_path: blog/page:num
 permalink: pretty
 excerpt_separator: "\n\n\n" # two blank lines
 plugins: [jekyll-feed, jekyll-paginate]
@@ -14,18 +15,18 @@ style:
   dark: false
 
 navigation:
-  - index.html
-  - about.md
+  - index.md
+  - blog/index.html
   - archive.html
 
-#comments: 
-#  disqus: "rusershamburg-de"
+comments: 
+  disqus: "https-rusershamburg-github-io"
 #  isso: "comments.mysite.org"
 
 links: # see http://fontawesome.io/icons/#brand for all possible icons
+  - meetup: "https://www.meetup.com/Hamburg-R-User-Group/"
   - twitter: "https://twitter.com/rusershamburg"
   - github: "https://github.com/rusershamburg"
-  - envelope: "https://www.meetup.com/Hamburg-R-User-Group/"
 
 defaults: [
   {
