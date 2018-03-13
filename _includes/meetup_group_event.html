@@ -1,0 +1,59 @@
+<div id="meetup_group_event"></div>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+<script type="text/javascript">
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+$(document).ready(function(){
+  $.ajax({ 
+    type:"GET", // GET = requesting data
+    url:"https://api.meetup.com/2/events?offset=0&format=json&limited_events=False&group_id=17102372&photo-host=public&page=20&fields=&order=time&desc=false&status=upcoming&sig_id=202955781&sig=58a0aa14add4b762c5ab708563f9c7928e58120a", 
+    success: function(data) { 
+      
+      var date = new Date(null); 
+          date.setMilliseconds(data.results[0].time); 
+
+      var date2 =  new Date(null); 
+          date2.setMilliseconds(
+            data.results[0].time + data.results[0].duration
+          );
+
+      $('#meetup_group_event').append(
+        "<h2>" + 
+          capitalizeFirstLetter(String(data.results[0].status)) + 
+        "</h2>"
+      ); 
+
+      $('#meetup_group_event').append(
+        "<b>" + 
+          "| " + date.toLocaleDateString() + "<br>" +
+          "| " + date.toLocaleTimeString().slice(0,5) + 
+          "&nbsp;&nbsp;-&nbsp;&nbsp;" + 
+          date2.toLocaleTimeString().slice(0,5) + "<br>" +
+          "| " + data.results[0].venue.name + "&nbsp;&nbsp;-&nbsp;&nbsp;" + 
+            data.results[0].venue.city + ", " +
+            data.results[0].venue.address_1 +
+        "</b>"
+      ); 
+
+      
+
+      $('#meetup_group_event').append(
+        "<h3>" + 
+          data.results[0].name + 
+        "</h3>" + 
+        data.results[0].description
+      ); 
+
+    },
+    // error: function()
+      dataType: 'jsonp',
+  });
+});
+</script>
+      
+      
+      
+

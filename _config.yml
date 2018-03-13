@@ -28,6 +28,7 @@ links: # see http://fontawesome.io/icons/#brand for all possible icons
   - twitter: "https://twitter.com/rusershamburg"
   - github: "https://github.com/rusershamburg"
 
+
 defaults: [
   {
     scope: {path: ""}, 

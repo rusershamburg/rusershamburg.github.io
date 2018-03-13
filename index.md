@@ -3,4 +3,11 @@ title: "Home"
 comments: true
 ---
 
-R USERS HAMBURG
+# Description
+
+{% include meetup_group_description.html %}
+
+
+
+
+{% include meetup_group_event.html %}

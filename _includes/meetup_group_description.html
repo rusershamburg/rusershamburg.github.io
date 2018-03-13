@@ -1,0 +1,19 @@
+<div id="meetup_group_description"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $.ajax({ 
+    type:"GET", // GET = requesting data
+    url:"https://api.meetup.com/Hamburg-R-User-Group?photo-host=public&sig_id=202955781&only=description&sig=e20546a9ca875cfa457fb7179362155377bd6b4b", 
+    success: function(data) { 
+      $('#meetup_group_description').append("<div>" + data.data.description + "</div>" ); 
+    },
+    // error: function()
+      dataType: 'jsonp',
+  });
+});
+</script>
+    
+    

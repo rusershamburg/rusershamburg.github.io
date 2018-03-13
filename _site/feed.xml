@@ -3,92 +3,118 @@
 <generator uri="http://jekyllrb.com" version="3.7.3">Jekyll</generator>
 <link href="https://rusershamburg.github.io/feed.xml" rel="self" type="application/atom+xml" />
 <link href="https://rusershamburg.github.io/" rel="alternate" type="text/html" />
-<updated>2018-03-12T23:35:08+01:00</updated>
+<updated>2018-03-13T22:30:16+01:00</updated>
 <id>https://rusershamburg.github.io/</id>
 <subtitle>R Users Hamburg</subtitle>
 <author>
 <name>rusershamburg</name>
 </author>
 <entry>
-<title>Up and Running</title>
-<link href="https://rusershamburg.github.io/blog/2018/03/11/up-and-running/" rel="alternate" type="text/html" title="Up and Running" />
-<published>2018-03-11T13:16:01+01:00</published>
-<updated>2018-03-11T13:16:01+01:00</updated>
-<id>https://rusershamburg.github.io/blog/2018/03/11/up-and-running</id>
-<content type="html" xml:base="https://rusershamburg.github.io/blog/2018/03/11/up-and-running/">&lt;p&gt;A first blog post that will get deleted once all things are set up and
-run&lt;/p&gt;
+<title>11th Quarterly R Users Hamburg Meetup</title>
+<link href="https://rusershamburg.github.io/blog/2017/12/07/r-meetup/" rel="alternate" type="text/html" title="11th Quarterly R Users Hamburg Meetup" />
+<published>2017-12-07T19:00:00+01:00</published>
+<updated>2017-12-07T19:00:00+01:00</updated>
+<id>https://rusershamburg.github.io/blog/2017/12/07/r-meetup</id>
+<content type="html" xml:base="https://rusershamburg.github.io/blog/2017/12/07/r-meetup/">&lt;p&gt;&lt;em&gt;Dec 7, 2017 · 19:00 @ &lt;a href=&quot;https://www.jobmatch.me/&quot;&gt;JobMatchMe&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;cars&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;talks&quot;&gt;Talks:&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;##    speed dist
-## 1      4    2
-## 2      4   10
-## 3      7    4
-## 4      7   22
-## 5      8   16
-## 6      9   10
-## 7     10   18
-## 8     10   26
-## 9     10   34
-## 10    11   17
-## 11    11   28
-## 12    12   14
-## 13    12   20
-## 14    12   24
-## 15    12   28
-## 16    13   26
-## 17    13   34
-## 18    13   34
-## 19    13   46
-## 20    14   26
-## 21    14   36
-## 22    14   60
-## 23    14   80
-## 24    15   20
-## 25    15   26
-## 26    15   54
-## 27    16   32
-## 28    16   40
-## 29    17   32
-## 30    17   40
-## 31    17   50
-## 32    18   42
-## 33    18   56
-## 34    18   76
-## 35    18   84
-## 36    19   36
-## 37    19   46
-## 38    19   68
-## 39    20   32
-## 40    20   48
-## 41    20   52
-## 42    20   56
-## 43    20   64
-## 44    22   66
-## 45    23   54
-## 46    24   70
-## 47    24   92
-## 48    24   93
-## 49    24  120
-## 50    25   85
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://strengejacke.wordpress.com/2017/12/08/bayesian-regression-modelling-in-r-choosing-informative-priors-in-rstanarm-rstats/&quot;&gt;Bayesian Regression Models: Choosing informative priors in rstanarm&lt;/a&gt; - Daniel Lüdecke&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PatrickStotz/2017.12_data_journalism_R_Notebooks/blob/master/2017.12%20-%20DDJ%20and%20R%20Notebooks.pdf&quot;&gt;A more structured approach to data journalism through the usage of R Notebooks&lt;/a&gt; - Patrick Stotz&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cars&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2018-03-11-up-and-running/plot.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
-<category term="log" />
-<summary>A first blog post that will get deleted once all things are set up andruncars##    speed dist## 1      4    2## 2      4   10## 3      7    4## 4      7   22## 5      8   16## 6      9   10## 7     10   18## 8     10   26## 9     10   34## 10    11   17## 11    11   28## 12    12   14## 13    12   20## 14    12   24## 15    12   28## 16    13   26## 17    13   34## 18    13   34## 19    13   46## 20    14   26## 21    14   36## 22    14   60## 23    14   80## 24    15   20## 25    15   26## 26    15   54## 27    16   32## 28    16   40## 29    17   32## 30    17   40## 31    17   50## 32    18   42## 33    18   56## 34    18   76## 35    18   84## 36    19   36## 37    19   46## 38    19   68## 39    20   32## 40    20   48## 41    20   52## 42    20   56## 43    20   64## 44    22   66## 45    23   54## 46    24   70## 47    24   92## 48    24   93## 49    24  120## 50    25   85summary(cars)##      speed           dist       ##  Min.   : 4.0   Min.   :  2.00  ##  1st Qu.:12.0   1st Qu.: 26.00  ##  Median :15.0   Median : 36.00  ##  Mean   :15.4   Mean   : 42.98  ##  3rd Qu.:19.0   3rd Qu.: 56.00  ##  Max.   :25.0   Max.   :120.00</summary>
+<category term="meetup" />
+<summary>Dec 7, 2017 · 19:00 @ JobMatchMeTalks:  Bayesian Regression Models: Choosing informative priors in rstanarm - Daniel Lüdecke  A more structured approach to data journalism through the usage of R Notebooks - Patrick Stotz</summary>
+</entry>
+<entry>
+<title>10th Quarterly R Users Hamburg Meetup</title>
+<link href="https://rusershamburg.github.io/blog/2017/08/01/r-meetup/" rel="alternate" type="text/html" title="10th Quarterly R Users Hamburg Meetup" />
+<published>2017-08-01T19:00:00+02:00</published>
+<updated>2017-08-01T19:00:00+02:00</updated>
+<id>https://rusershamburg.github.io/blog/2017/08/01/r-meetup</id>
+<content type="html" xml:base="https://rusershamburg.github.io/blog/2017/08/01/r-meetup/">&lt;p&gt;&lt;em&gt;Aug 1, 2017 · 19:00 @ &lt;a href=&quot;http://xing.com&quot;&gt;XING AG&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;aob&quot;&gt;AOB:&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/rusershamburg/meetup-10/blob/master/RUsersHH10thMeetup.pdf&quot;&gt;10th RUsersHH Meetup&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;talks&quot;&gt;Talks:&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mnwright/Rcpp-tutorial&quot;&gt;Rcpp tutorial&lt;/a&gt; - Marvin N. Wright&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;lightning-talks&quot;&gt;Lightning talks:&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/petermeissner/crossword.r&quot;&gt;crossword-pkg&lt;/a&gt; - &lt;a href=&quot;https://twitter.com/marvin_dpr&quot;&gt;Peter Meißner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rusershamburg/meetup-repo/blob/master/meetup-10/r2anki_presentation.pdf&quot;&gt;r2anki-pkg&lt;/a&gt; - Henning Bumann (&lt;a href=&quot;https://github.com/henningsway/r2anki&quot;&gt;Link to r2anki-Repository&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kruse-alex/bike_sharing&quot;&gt;Visualization of usage of bike sharing network in Hamburg (StadtRAD)&lt;/a&gt; - Alex Kruse&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rusershamburg/meetup-repo/blob/master/meetup-10/AdvancedRSolutions_LightningTalk_UseR2017.pdf&quot;&gt;Advanced R Solutions&lt;/a&gt; - Malte Grosser&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+<category term="meetup" />
+<summary>Aug 1, 2017 · 19:00 @ XING AGAOB:10th RUsersHH MeetupTalks:  Rcpp tutorial - Marvin N. WrightLightning talks:  crossword-pkg - Peter Meißner  r2anki-pkg - Henning Bumann (Link to r2anki-Repository)  Visualization of usage of bike sharing network in Hamburg (StadtRAD) - Alex Kruse  Advanced R Solutions - Malte Grosser</summary>
+</entry>
+<entry>
+<title>9th quarterly R meetup</title>
+<link href="https://rusershamburg.github.io/blog/2017/05/16/r-meetup/" rel="alternate" type="text/html" title="9th quarterly R meetup" />
+<published>2017-05-16T19:00:00+02:00</published>
+<updated>2017-05-16T19:00:00+02:00</updated>
+<id>https://rusershamburg.github.io/blog/2017/05/16/r-meetup</id>
+<content type="html" xml:base="https://rusershamburg.github.io/blog/2017/05/16/r-meetup/">&lt;p&gt;&lt;em&gt;16.05.2017 · 19:00 @ &lt;a href=&quot;http://fashion.cloud&quot;&gt;Fashion.Cloud&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;talks&quot;&gt;Talks:&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;H2O Deep Water - Making Deep Learning Accessible to Everyone - Jo-fai Chow&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/henningsway/tidyforecast&quot;&gt;Forecasting and the Tidyverse&lt;/a&gt; - Janko Thyson, Henning Bumann&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;lightning-talks&quot;&gt;Lightning talks:&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rusershamburg/meetup-repo/blob/master/meetup-09/20170516_snakecase_pkg.pdf&quot;&gt;snakecase-pkg&lt;/a&gt; - Malte Grosser&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/henningsway/Tokyo.R&quot;&gt;Intro to blogdown-pkg&lt;/a&gt; - Henning Bumann&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;aob&quot;&gt;AOB:&lt;/h3&gt;
+
+&lt;p&gt;Filming of Talks.&lt;/p&gt;
+</content>
+<category term="meetup" />
+<summary>16.05.2017 · 19:00 @ Fashion.CloudTalks:  H2O Deep Water - Making Deep Learning Accessible to Everyone - Jo-fai Chow  Forecasting and the Tidyverse - Janko Thyson, Henning BumannLightning talks:  snakecase-pkg - Malte Grosser  Intro to blogdown-pkg - Henning BumannAOB:Filming of Talks.</summary>
+</entry>
+<entry>
+<title>8th Quarterly R Users Hamburg Meetup</title>
+<link href="https://rusershamburg.github.io/blog/2017/02/21/r-meetup/" rel="alternate" type="text/html" title="8th Quarterly R Users Hamburg Meetup" />
+<published>2017-02-21T19:00:00+01:00</published>
+<updated>2017-02-21T19:00:00+01:00</updated>
+<id>https://rusershamburg.github.io/blog/2017/02/21/r-meetup</id>
+<content type="html" xml:base="https://rusershamburg.github.io/blog/2017/02/21/r-meetup/">&lt;p&gt;&lt;em&gt;21.02.2017 · 19:00 @ &lt;a href=&quot;http://hamburg.socialimpactlab.eu/kontakt&quot;&gt;Social Impact Lab&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;talks&quot;&gt;Talks:&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rusershamburg/meetup-repo/blob/master/meetup-08/20170221_data_transformation_and_exploration.pdf&quot;&gt;Data Transformation in R - The Tidyverse-Approach of Organizing Data&lt;/a&gt; - Daniel Lüdecke&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rusershamburg/meetup-repo/blob/master/meetup-08/20170221_WhatsAppR_package.pdf&quot;&gt;WhatsappR Package&lt;/a&gt; - Boris L.S.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;lightning-talks&quot;&gt;Lightning talks:&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rusershamburg/meetup-repo/blob/master/meetup-08/20170221_data_science_for_social_impact.pdf&quot;&gt;Data science for social impact&lt;/a&gt; - Janko Thyson&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rusershamburg/meetup-repo/blob/master/meetup-08/20170221_interactive_spatial_clusters.pdf&quot;&gt;Interactive spatial clusters&lt;/a&gt; - Malte Grosser&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;aob&quot;&gt;AOB:&lt;/h3&gt;
+
+&lt;p&gt;We’re applying for sponsorship- what does this mean for you?&lt;/p&gt;
+</content>
+<category term="meetup" />
+<summary>21.02.2017 · 19:00 @ Social Impact LabTalks:  Data Transformation in R - The Tidyverse-Approach of Organizing Data - Daniel Lüdecke  WhatsappR Package - Boris L.S.Lightning talks:  Data science for social impact - Janko Thyson  Interactive spatial clusters - Malte GrosserAOB:We’re applying for sponsorship- what does this mean for you?</summary>
 </entry>
 </feed>

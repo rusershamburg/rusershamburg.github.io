@@ -1,8 +1,8 @@
 body
   font-family: "Source Sans Pro"
-  font-weight: 300
+  font-weight: 400
   font-size: 18px
-  line-height: 1.65
+  line-height: 1.3
   margin: 0
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
@@ -14,14 +14,17 @@ a
   &.selected, &:hover
     color: reduce(100)
 
-a, b, strong, th
+b 
+  font-weight: 600
+
+p, div  a, strong, th
   font-weight: 400
 
-h1, h3, h4, h5, h6
-  font-weight: 300
+h1, h2, h3, h4, h5, h6
+  font-weight: 900
   
-h2
-  font-weight: 400
+h1
+  text-align: center
 
 main
   flex-grow: 1
