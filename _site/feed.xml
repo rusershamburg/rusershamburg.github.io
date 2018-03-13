@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 <generator uri="http://jekyllrb.com" version="3.7.3">Jekyll</generator>
-<link href="https://rusershamburg.github.io/feed.xml" rel="self" type="application/atom+xml" />
-<link href="https://rusershamburg.github.io/" rel="alternate" type="text/html" />
-<updated>2018-03-13T22:30:16+01:00</updated>
-<id>https://rusershamburg.github.io/</id>
+<link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
+<link href="http://localhost:4000/" rel="alternate" type="text/html" />
+<updated>2018-03-13T22:38:49+01:00</updated>
+<id>http://localhost:4000/</id>
 <subtitle>R Users Hamburg</subtitle>
 <author>
 <name>rusershamburg</name>
 </author>
 <entry>
 <title>11th Quarterly R Users Hamburg Meetup</title>
-<link href="https://rusershamburg.github.io/blog/2017/12/07/r-meetup/" rel="alternate" type="text/html" title="11th Quarterly R Users Hamburg Meetup" />
+<link href="http://localhost:4000/blog/2017/12/07/r-meetup/" rel="alternate" type="text/html" title="11th Quarterly R Users Hamburg Meetup" />
 <published>2017-12-07T19:00:00+01:00</published>
 <updated>2017-12-07T19:00:00+01:00</updated>
-<id>https://rusershamburg.github.io/blog/2017/12/07/r-meetup</id>
-<content type="html" xml:base="https://rusershamburg.github.io/blog/2017/12/07/r-meetup/">&lt;p&gt;&lt;em&gt;Dec 7, 2017 · 19:00 @ &lt;a href=&quot;https://www.jobmatch.me/&quot;&gt;JobMatchMe&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+<id>http://localhost:4000/blog/2017/12/07/r-meetup</id>
+<content type="html" xml:base="http://localhost:4000/blog/2017/12/07/r-meetup/">&lt;p&gt;&lt;em&gt;Dec 7, 2017 · 19:00 @ &lt;a href=&quot;https://www.jobmatch.me/&quot;&gt;JobMatchMe&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;talks&quot;&gt;Talks:&lt;/h3&gt;
 
@@ -30,11 +30,11 @@
 </entry>
 <entry>
 <title>10th Quarterly R Users Hamburg Meetup</title>
-<link href="https://rusershamburg.github.io/blog/2017/08/01/r-meetup/" rel="alternate" type="text/html" title="10th Quarterly R Users Hamburg Meetup" />
+<link href="http://localhost:4000/blog/2017/08/01/r-meetup/" rel="alternate" type="text/html" title="10th Quarterly R Users Hamburg Meetup" />
 <published>2017-08-01T19:00:00+02:00</published>
 <updated>2017-08-01T19:00:00+02:00</updated>
-<id>https://rusershamburg.github.io/blog/2017/08/01/r-meetup</id>
-<content type="html" xml:base="https://rusershamburg.github.io/blog/2017/08/01/r-meetup/">&lt;p&gt;&lt;em&gt;Aug 1, 2017 · 19:00 @ &lt;a href=&quot;http://xing.com&quot;&gt;XING AG&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+<id>http://localhost:4000/blog/2017/08/01/r-meetup</id>
+<content type="html" xml:base="http://localhost:4000/blog/2017/08/01/r-meetup/">&lt;p&gt;&lt;em&gt;Aug 1, 2017 · 19:00 @ &lt;a href=&quot;http://xing.com&quot;&gt;XING AG&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;aob&quot;&gt;AOB:&lt;/h3&gt;
 
@@ -61,11 +61,11 @@
 </entry>
 <entry>
 <title>9th quarterly R meetup</title>
-<link href="https://rusershamburg.github.io/blog/2017/05/16/r-meetup/" rel="alternate" type="text/html" title="9th quarterly R meetup" />
+<link href="http://localhost:4000/blog/2017/05/16/r-meetup/" rel="alternate" type="text/html" title="9th quarterly R meetup" />
 <published>2017-05-16T19:00:00+02:00</published>
 <updated>2017-05-16T19:00:00+02:00</updated>
-<id>https://rusershamburg.github.io/blog/2017/05/16/r-meetup</id>
-<content type="html" xml:base="https://rusershamburg.github.io/blog/2017/05/16/r-meetup/">&lt;p&gt;&lt;em&gt;16.05.2017 · 19:00 @ &lt;a href=&quot;http://fashion.cloud&quot;&gt;Fashion.Cloud&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+<id>http://localhost:4000/blog/2017/05/16/r-meetup</id>
+<content type="html" xml:base="http://localhost:4000/blog/2017/05/16/r-meetup/">&lt;p&gt;&lt;em&gt;16.05.2017 · 19:00 @ &lt;a href=&quot;http://fashion.cloud&quot;&gt;Fashion.Cloud&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;talks&quot;&gt;Talks:&lt;/h3&gt;
 
@@ -90,11 +90,11 @@
 </entry>
 <entry>
 <title>8th Quarterly R Users Hamburg Meetup</title>
-<link href="https://rusershamburg.github.io/blog/2017/02/21/r-meetup/" rel="alternate" type="text/html" title="8th Quarterly R Users Hamburg Meetup" />
+<link href="http://localhost:4000/blog/2017/02/21/r-meetup/" rel="alternate" type="text/html" title="8th Quarterly R Users Hamburg Meetup" />
 <published>2017-02-21T19:00:00+01:00</published>
 <updated>2017-02-21T19:00:00+01:00</updated>
-<id>https://rusershamburg.github.io/blog/2017/02/21/r-meetup</id>
-<content type="html" xml:base="https://rusershamburg.github.io/blog/2017/02/21/r-meetup/">&lt;p&gt;&lt;em&gt;21.02.2017 · 19:00 @ &lt;a href=&quot;http://hamburg.socialimpactlab.eu/kontakt&quot;&gt;Social Impact Lab&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+<id>http://localhost:4000/blog/2017/02/21/r-meetup</id>
+<content type="html" xml:base="http://localhost:4000/blog/2017/02/21/r-meetup/">&lt;p&gt;&lt;em&gt;21.02.2017 · 19:00 @ &lt;a href=&quot;http://hamburg.socialimpactlab.eu/kontakt&quot;&gt;Social Impact Lab&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;talks&quot;&gt;Talks:&lt;/h3&gt;
 
