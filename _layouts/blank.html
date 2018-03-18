@@ -14,7 +14,10 @@
 {% if site.comments.disqus and page.comments %}<script src="//{{ site.comments.disqus }}.disqus.com/embed.js" async></script>{% endif %}
 {% if site.comments.isso and page.comments %}<script data-isso="http://{{ site.comments.isso }}" src="//{{ site.comments.isso }}/js/embed.min.js"></script>{% endif %}
 <header>
-  <h1><img src="logo.png"><a href="{{ site.baseurl  }}">{{ site.title | replace_first: 'R ', '' }}</a></h1>
+  <h1>
+    <img src="https://rusershamburg.github.io/logo_rusershamburg_w.png"/>
+    <a href="{{ site.baseurl  }}">{{ site.title | replace_first: 'R ', '' }}</a>
+    </h1>
   <nav>
     <div>{% for path in site.navigation %}{% assign node = site.pages | where: "path", path | first %}<a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>{% endfor %}</div>
     <div>{% for link_hash in site.links %}{% for link in link_hash %}<a href="{{ link[1] }}"><i class="fa fa-{{ link[0] }}"></i></a>{% endfor %}{% endfor %}</div>
