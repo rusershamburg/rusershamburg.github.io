@@ -2,5 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
-.sass-cache/
+.sass-cache/*
 

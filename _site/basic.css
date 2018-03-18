@@ -50,6 +50,20 @@ header a, footer a {
   font-weight: 300;
 }
 
+body > header > h1 {
+  text-align: left;
+}
+
+body > header > h1 > img {
+  content: url(https://rusershamburg.github.io/logo_rusershamburg_w.png);
+  vertical-align: -0.55em;
+  height: 2em;
+}
+
+header nav div a {
+  margin-bottom: 10px;
+}
+
 hr {
   border: 1px solid rgba(148, 148, 148, 0.16);
   margin: 2em 0;
