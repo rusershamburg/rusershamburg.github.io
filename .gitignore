@@ -3,4 +3,6 @@
 .RData
 .Ruserdata
 .sass-cache/*
+*/error*.log
+
 
