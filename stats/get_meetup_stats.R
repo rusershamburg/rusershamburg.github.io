@@ -81,19 +81,67 @@ sys_execute <-
   }
 
 add_to_repo_commit <- 
-  function(x, append = FALSE, git_update = FALSE){
+  function(
+    x, 
+    append     = FALSE, 
+    git_update = FALSE, 
+    type       = c("json", "csv")
+  ){
+    
+    # process inputs
+    type <- type[1]
     
     # get name of object to save
     x_name  <- deparse(substitute(x))
     
     # get file name to store data in
-    x_fname <- paste0("stats/", x_name, ".json")
+    x_fname <- paste0("stats/", x_name, ".", type)
     
     # write out data 
     if( append == TRUE ){
-      write(x = x, file = x_fname, append = TRUE) 
+      
+      if( type == "json" ){
+        
+        write(x = x, file = x_fname, append = TRUE) 
+        
+      }else if( type == "csv" ){
+        colnames <- !( file.exists(x_fname) )
+        write.table(
+          x         = x, 
+          file      = x_fname, 
+          row.names = FALSE, 
+          sep       = ",", 
+          quote     = TRUE, 
+          qmethod   = "double",
+          append    = TRUE,
+          col.names = colnames
+        )
+        
+      }else{
+        stop("function does not know how to handle this type")
+      }
+      
     }else{
-      writeLines(text = x, con = x_fname)
+      if( type == "json" ){
+        
+        writeLines(text = x, con = x_fname)
+        
+      }else if( type == "csv" ){
+        
+        write.table(
+          x         = x, 
+          file      = x_fname, 
+          row.names = FALSE, 
+          sep       = ",", 
+          quote     = TRUE, 
+          qmethod   = "double"
+        )
+        
+      }else{
+        stop("function does not know how to handle this type")
+      }
+      
+      
     }
     
     # stage for next commit
@@ -170,8 +218,10 @@ group_data <- as.list(group_json$results[[1]])
 
 
 # - topics
-topics <- group_data$topics[[1]]$name
-topics <- toJSON( list( topics = topics ),pretty = TRUE)
+topics     <- group_data$topics[[1]]$name
+topics     <- toJSON( list( topics = topics ),pretty = TRUE)
+topics_csv <- data.frame(topic = group_data$topics[[1]]$name, stringsAsFactors = FALSE)
+
 
 
 # - description
@@ -180,10 +230,13 @@ description <- toJSON( list( description = description ), pretty = TRUE)
 
 
 # - rating
-rating <- toJSON(list(rating = list(date = Sys.Date(), rating = group_data$rating) ))
+rating     <- toJSON(list(rating = list(date = Sys.Date(), rating = group_data$rating) ))
+rating_csv <- data.frame(date = Sys.Date(), count = group_data$rating, stringsAsFactors = FALSE)
+
 
 # - memebers
-members <- toJSON(list(members = list(date = Sys.Date(), count = group_data$members) ))
+members     <- toJSON(list(members = list(date = Sys.Date(), count = group_data$members) ))
+members_csv <- data.frame(date = Sys.Date(), count = group_data$members, stringsAsFactors = FALSE)
 
 
 # - events
@@ -200,7 +253,12 @@ events_short <- event_json
   events_short$venue_lon     <- events_short$venue$lon
   events_short$venue         <- NULL
   events_short$duration_h    <- paste0(round(events_short$duration/1000/60/60), "h ", round(((events_short$duration/1000/60/60)%%1)*60), "min" )
-events_short <- toJSON(events_short)
+
+events_short_csv <- events_short
+events_short_csv$created <- as.character(as.POSIXct(events_short_csv$created/1000, origin = "1970-01-01"))
+events_short_csv$time    <- as.character(as.POSIXct(events_short_csv$time/1000, origin = "1970-01-01"))
+
+events_short     <- toJSON(events_short)
 
 
 # write content to file
@@ -210,6 +268,11 @@ add_to_repo_commit(rating,  append = TRUE, git_update = git_update)
 add_to_repo_commit(members, append = TRUE, git_update = git_update)
 add_to_repo_commit(events,                 git_update = git_update)
 add_to_repo_commit(events_short,           git_update = git_update)
+
+add_to_repo_commit(topics_csv,                 git_update = git_update, type = "csv")
+add_to_repo_commit(rating_csv,  append = TRUE, git_update = git_update, type = "csv")
+add_to_repo_commit(members_csv, append = TRUE, git_update = git_update, type = "csv")
+add_to_repo_commit(events_short_csv,           git_update = git_update, type = "csv")
 
 
 
