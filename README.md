@@ -66,7 +66,7 @@ feed.xml as well as in feed_r.xml.
 
 
 
-### Building Page
+### Building Page (only needed for local previews)
 
 <!-- 
 **(1) re-building r-markdown**
