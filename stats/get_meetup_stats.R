@@ -237,7 +237,7 @@ rating_csv <- data.frame(date = Sys.Date(), count = group_data$rating, stringsAs
 # - memebers
 members     <- toJSON(list(members = list(date = Sys.Date(), count = group_data$members) ))
 members_csv <- data.frame(date = Sys.Date(), count = group_data$members, stringsAsFactors = FALSE)
-
+members_csv$type <- "membercount"
 
 # - events
 events       <- toJSON(event_json)
