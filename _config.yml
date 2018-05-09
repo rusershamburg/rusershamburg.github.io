@@ -20,6 +20,7 @@ navigation:
   - index.md
   - blog/index.html
   - archive.html
+  - blogroll.html
 
 comments: 
   disqus: "https-rusershamburg-github-io"

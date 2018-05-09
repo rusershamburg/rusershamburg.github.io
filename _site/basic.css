@@ -61,6 +61,7 @@ body > header > h1 > img {
 
 body > header {
   background-image: url(https://pbs.twimg.com/profile_banners/830214889306259457/1520815291/1500x500);
+  background-position-y: -109px;
   background-color: #525252;
   background-blend-mode: overlay;
 }
@@ -140,4 +141,9 @@ tr:hover {
 th, td {
   box-shadow: 0px 0px 0px 1px rgba(148, 148, 148, 0.16);
   padding: 0.5em 1em;
+}
+
+dt {
+  margin-top: 25px;
+  margin-bottom: 5px;
 }

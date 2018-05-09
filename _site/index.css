@@ -38,7 +38,7 @@ a.gray:hover {
 }
 
 html {
-  background-color: #282828;
+  /*background-color: #282828 */
 }
 
 article:first-of-type {
@@ -50,7 +50,7 @@ article, body > header, body > footer {
 }
 
 body > header {
-  background-color: #282828;
+  /*background-color: #282828 */
   color: white;
 }
 

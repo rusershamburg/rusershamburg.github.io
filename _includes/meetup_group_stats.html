@@ -1,0 +1,52 @@
+<!-- plotting -->
+<script src="assets/js/ts_plot_event_handler.js"></script>
+<script src="assets/js/ts_plot.js"></script>
+
+
+<!-- container for plots -->
+<div 
+  id = "plot_group_members" 
+  style = 
+    "
+    width: 49%; 
+    height: 150px; 
+    text-align: center;
+    display: inline-block;
+    "
+>
+</div>
+
+<div 
+  id = "plot_event_attendance" 
+  style = 
+    "
+    width: 49%; 
+    height: 150px; 
+    text-align: center;
+    display: inline-block;
+    "
+>
+</div>
+
+<!-- do plot -->
+<script>
+  ts_plot(
+    element_id = "plot_group_members",
+    data_source = "https://rusershamburg.github.io/stats/members_csv.csv",
+    time_column = "date",
+    ts_columns = "count",
+    title = "Group members"
+  );
+
+  ts_plot(
+    element_id = "plot_event_attendance",
+    data_source = "https://rusershamburg.github.io/stats/events_short_csv.csv",
+    time_column = "local_date",
+    ts_columns = "yes_rsvp_count",
+    title = "Event attendence"
+  );
+
+  $(window).trigger('resize');
+
+</script>
+

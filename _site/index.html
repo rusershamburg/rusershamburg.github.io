@@ -1,41 +1,107 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
-<meta name="author" content="rusershamburg">
-<meta name="description" content="R Users Hamburg">
-<title> Home › R Users Hamburg</title>
-<link rel="canonical" href="http://localhost:4000/">
-<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="/basic.css" rel="stylesheet">
-<link href="/highlight.css" rel="stylesheet">
-<link href="/index.css" rel="stylesheet">
-<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="R Users Hamburg" />
-<script src="//https-rusershamburg-github-io.disqus.com/embed.js" async></script>
+<html>
+  <!-- layout: blank.html -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="utf-8">
+    <meta name="author" content="rusershamburg">
+    <meta name="description" content="R Users Hamburg">
+    
 
-<header>
-  <h1>
-    <img src="https://rusershamburg.github.io/logo_rusershamburg_w.png"/>
-    <a href="">Users Hamburg</a>
-    </h1>
-  <nav>
-    <div><a href="/">Home</a><a href="/blog/">Blog</a><a href="/archive/">Archive</a></div>
-    <div><a href="https://www.meetup.com/Hamburg-R-User-Group/"><i class="fa fa-meetup"></i></a><a href="https://twitter.com/rusershamburg"><i class="fa fa-twitter"></i></a><a href="https://github.com/rusershamburg"><i class="fa fa-github"></i></a><a href="https://www.youtube.com/channel/UCC12M-Yh9M5Hm6e1PAHt6zQ/videos"><i class="fa fa-youtube"></i></a></div>
-  </nav>
-</header>
-<main>
+    <title> Welcome › R Users Hamburg</title>
+    
+    <link rel="canonical" href="http://localhost:4000/">
+    
+    <!-- font and icons -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="/basic.css" rel="stylesheet">
+    <link href="/highlight.css" rel="stylesheet">
+    <link href="/index.css" rel="stylesheet">
+    <link href="/ts_plot.css" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+    <!-- feed meta: -->
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="" />
+    <script src="//https-rusershamburg-github-io.disqus.com/embed.js" async></script>
+    
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <img src="https://rusershamburg.github.io/logo_rusershamburg_w.png"/>
+        <a href="">Users Hamburg</a>
+        </h1>
+      <nav>
+        <div><a href="/">Welcome</a><a href="/blog/">Blog</a><a href="/archive/">Archive</a><a href="/blogroll/">Blogroll</a></div>
+        <div><a href="https://www.meetup.com/Hamburg-R-User-Group/"><i class="fa fa-meetup"></i></a><a href="https://twitter.com/rusershamburg"><i class="fa fa-twitter"></i></a><a href="https://github.com/rusershamburg"><i class="fa fa-github"></i></a><a href="https://www.youtube.com/channel/UCC12M-Yh9M5Hm6e1PAHt6zQ/videos"><i class="fa fa-youtube"></i></a></div>
+      </nav>
+    </header>
+    
+    <!-- content -->
+    <main>
   <article>
     <header>
-      <h1><a href="/">Home</a></h1>
+      <h1><a href="/">Welcome</a></h1>
       <time datetime=""></time>
       <p></p>
     </header>
     <div>
-<h1 id="description">Description</h1>
+<div style="margin-bottom: 30px;"> ... to the home of the R Users Hamburg (Meetup) Group. Founded in 2015 the group holds regular quarterly meetings in various locations across Hamburg to foster knowledge exchange and networking within the local R community.</div>
+
+<!-- plotting -->
+<script src="assets/js/ts_plot_event_handler.js"></script>
+
+<script src="assets/js/ts_plot.js"></script>
+
+<!-- container for plots -->
+<div id="plot_group_members" style="
+    width: 49%; 
+    height: 150px; 
+    text-align: center;
+    display: inline-block;
+    ">
+</div>
+
+<div id="plot_event_attendance" style="
+    width: 49%; 
+    height: 150px; 
+    text-align: center;
+    display: inline-block;
+    ">
+</div>
+
+<!-- do plot -->
+<script>
+  ts_plot(
+    element_id = "plot_group_members",
+    data_source = "https://rusershamburg.github.io/stats/members_csv.csv",
+    time_column = "date",
+    ts_columns = "count",
+    title = "Group members"
+  );
+
+  ts_plot(
+    element_id = "plot_event_attendance",
+    data_source = "https://rusershamburg.github.io/stats/events_short_csv.csv",
+    time_column = "local_date",
+    ts_columns = "yes_rsvp_count",
+    title = "Event attendence"
+  );
+
+  $(window).trigger('resize');
+
+</script>
 
 <div id="meetup_group_description"></div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -52,8 +118,6 @@ $(document).ready(function(){
 </script>
 
 <div id="meetup_group_event"></div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script type="text/javascript">
 function capitalizeFirstLetter(string) {
@@ -116,5 +180,11 @@ $(document).ready(function(){
     
   </article>
 </main>
+
+    
+   
+  </body>
+
+</html>
 
 

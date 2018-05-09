@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-30T09:04:48+02:00</updated><id>http://localhost:4000/</id><title type="html">R Users Hamburg</title><subtitle>R Users Hamburg</subtitle><author><name>rusershamburg</name></author><entry><title type="html">12th Quarterly R Users Hamburg Meetup</title><link href="http://localhost:4000/blog/2018/03/20/r-meetup/" rel="alternate" type="text/html" title="12th Quarterly R Users Hamburg Meetup" /><published>2018-03-20T18:00:00+01:00</published><updated>2018-03-20T18:00:00+01:00</updated><id>http://localhost:4000/blog/2018/03/20/r-meetup</id><content type="html" xml:base="http://localhost:4000/blog/2018/03/20/r-meetup/">&lt;p&gt;&lt;em&gt;Mar 20, 2018 · 18:00 @ &lt;a href=&quot;https://www.zalando-adtech-lab.com/&quot;&gt;Zalando adtech lab&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<generator uri="http://jekyllrb.com" version="3.7.3">Jekyll</generator>
+<link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
+<link href="http://localhost:4000/" rel="alternate" type="text/html" />
+<updated>2018-05-09T22:10:03+02:00</updated>
+<id>http://localhost:4000/</id>
+<subtitle>R Users Hamburg</subtitle>
+<author>
+<name>rusershamburg</name>
+</author>
+<entry>
+<title>12th Quarterly R Users Hamburg Meetup</title>
+<link href="http://localhost:4000/blog/2018/03/20/r-meetup/" rel="alternate" type="text/html" title="12th Quarterly R Users Hamburg Meetup" />
+<published>2018-03-20T18:00:00+01:00</published>
+<updated>2018-03-20T18:00:00+01:00</updated>
+<id>http://localhost:4000/blog/2018/03/20/r-meetup</id>
+<content type="html" xml:base="http://localhost:4000/blog/2018/03/20/r-meetup/">&lt;p&gt;&lt;em&gt;Mar 20, 2018 · 18:00 @ &lt;a href=&quot;https://www.zalando-adtech-lab.com/&quot;&gt;Zalando adtech lab&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;aob&quot;&gt;AOB&lt;/h3&gt;
 
@@ -18,14 +35,37 @@
   &lt;li&gt;&lt;a href=&quot;https://appsilondatascience.com/blog/rstats/2018/01/16/keras.html&quot;&gt;blog post 1&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://appsilondatascience.com/blog/rstats/2018/01/23/keras.html&quot;&gt;blog post 2&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/maju116/WhyR_Hamburg.git&quot;&gt;github repo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>rusershamburg</name></author><category term="meetup" /><summary type="html">Mar 20, 2018 · 18:00 @ Zalando adtech lab AOB 12th RUsersHH Meetup Workshop Free Workshop on Deep Learning with R - Michał Maj [ twitter ] [ linkedin ] [ github ] Artificial Intelligence or AI has exploded in popularity both in business as in society. Companies large and small are redirecting their digital transformation to include technologies that are the true representation of what AI currently is; namely, deep learning. Deep learning is a subset of machine learning, which more generally, falls into data science. Both machine learning and deep learning find themselves at the peak of 2017’s Gartner Hype Cycle and are already making a huge impact on the current technological status quo. Let’s take a look at one way of going about creating a basic machine learning model. [ source ] blog post 1 blog post 2 github repo</summary></entry><entry><title type="html">11th Quarterly R Users Hamburg Meetup</title><link href="http://localhost:4000/blog/2017/12/07/r-meetup/" rel="alternate" type="text/html" title="11th Quarterly R Users Hamburg Meetup" /><published>2017-12-07T19:00:00+01:00</published><updated>2017-12-07T19:00:00+01:00</updated><id>http://localhost:4000/blog/2017/12/07/r-meetup</id><content type="html" xml:base="http://localhost:4000/blog/2017/12/07/r-meetup/">&lt;p&gt;&lt;em&gt;Dec 7, 2017 · 19:00 @ &lt;a href=&quot;https://www.jobmatch.me/&quot;&gt;JobMatchMe&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/ul&gt;
+</content>
+<category term="meetup" />
+<summary>Mar 20, 2018 · 18:00 @ Zalando adtech labAOB12th RUsersHH MeetupWorkshop  Free Workshop on Deep Learning with R -  Michał Maj  [ twitter ] [ linkedin ] [ github ]  Artificial Intelligence or AI has exploded in popularity both in business as in society. Companies large and small are redirecting their digital transformation to include technologies that are the true representation of what AI currently is; namely, deep learning. Deep learning is a subset of machine learning, which more generally, falls into data science. Both machine learning and deep learning find themselves at the peak of 2017’s Gartner Hype Cycle and are already making a huge impact on the current technological status quo. Let’s take a look at one way of going about creating a basic machine learning model. [ source ]  blog post 1  blog post 2  github repo</summary>
+</entry>
+<entry>
+<title>11th Quarterly R Users Hamburg Meetup</title>
+<link href="http://localhost:4000/blog/2017/12/07/r-meetup/" rel="alternate" type="text/html" title="11th Quarterly R Users Hamburg Meetup" />
+<published>2017-12-07T19:00:00+01:00</published>
+<updated>2017-12-07T19:00:00+01:00</updated>
+<id>http://localhost:4000/blog/2017/12/07/r-meetup</id>
+<content type="html" xml:base="http://localhost:4000/blog/2017/12/07/r-meetup/">&lt;p&gt;&lt;em&gt;Dec 7, 2017 · 19:00 @ &lt;a href=&quot;https://www.jobmatch.me/&quot;&gt;JobMatchMe&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;talks&quot;&gt;Talks:&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;https://strengejacke.wordpress.com/2017/12/08/bayesian-regression-modelling-in-r-choosing-informative-priors-in-rstanarm-rstats/&quot;&gt;Bayesian Regression Models: Choosing informative priors in rstanarm&lt;/a&gt; - Daniel Lüdecke&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/PatrickStotz/2017.12_data_journalism_R_Notebooks/blob/master/2017.12%20-%20DDJ%20and%20R%20Notebooks.pdf&quot;&gt;A more structured approach to data journalism through the usage of R Notebooks&lt;/a&gt; - Patrick Stotz&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>rusershamburg</name></author><category term="meetup" /><summary type="html">Dec 7, 2017 · 19:00 @ JobMatchMe Talks: Bayesian Regression Models: Choosing informative priors in rstanarm - Daniel Lüdecke A more structured approach to data journalism through the usage of R Notebooks - Patrick Stotz</summary></entry><entry><title type="html">10th Quarterly R Users Hamburg Meetup</title><link href="http://localhost:4000/blog/2017/08/01/r-meetup/" rel="alternate" type="text/html" title="10th Quarterly R Users Hamburg Meetup" /><published>2017-08-01T19:00:00+02:00</published><updated>2017-08-01T19:00:00+02:00</updated><id>http://localhost:4000/blog/2017/08/01/r-meetup</id><content type="html" xml:base="http://localhost:4000/blog/2017/08/01/r-meetup/">&lt;p&gt;&lt;em&gt;Aug 1, 2017 · 19:00 @ &lt;a href=&quot;http://xing.com&quot;&gt;XING AG&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/ol&gt;
+
+</content>
+<category term="meetup" />
+<summary>Dec 7, 2017 · 19:00 @ JobMatchMeTalks:  Bayesian Regression Models: Choosing informative priors in rstanarm - Daniel Lüdecke  A more structured approach to data journalism through the usage of R Notebooks - Patrick Stotz</summary>
+</entry>
+<entry>
+<title>10th Quarterly R Users Hamburg Meetup</title>
+<link href="http://localhost:4000/blog/2017/08/01/r-meetup/" rel="alternate" type="text/html" title="10th Quarterly R Users Hamburg Meetup" />
+<published>2017-08-01T19:00:00+02:00</published>
+<updated>2017-08-01T19:00:00+02:00</updated>
+<id>http://localhost:4000/blog/2017/08/01/r-meetup</id>
+<content type="html" xml:base="http://localhost:4000/blog/2017/08/01/r-meetup/">&lt;p&gt;&lt;em&gt;Aug 1, 2017 · 19:00 @ &lt;a href=&quot;http://xing.com&quot;&gt;XING AG&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;aob&quot;&gt;AOB:&lt;/h3&gt;
 
@@ -44,7 +84,19 @@
   &lt;li&gt;&lt;a href=&quot;https://github.com/rusershamburg/meetup-repo/blob/master/meetup-10/r2anki_presentation.pdf&quot;&gt;r2anki-pkg&lt;/a&gt; - Henning Bumann (&lt;a href=&quot;https://github.com/henningsway/r2anki&quot;&gt;Link to r2anki-Repository&lt;/a&gt;)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/kruse-alex/bike_sharing&quot;&gt;Visualization of usage of bike sharing network in Hamburg (StadtRAD)&lt;/a&gt; - Alex Kruse&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/rusershamburg/meetup-repo/blob/master/meetup-10/AdvancedRSolutions_LightningTalk_UseR2017.pdf&quot;&gt;Advanced R Solutions&lt;/a&gt; - Malte Grosser&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>rusershamburg</name></author><category term="meetup" /><summary type="html">Aug 1, 2017 · 19:00 @ XING AG AOB: 10th RUsersHH Meetup Talks: Rcpp tutorial - Marvin N. Wright Lightning talks: crossword-pkg - Peter Meißner r2anki-pkg - Henning Bumann (Link to r2anki-Repository) Visualization of usage of bike sharing network in Hamburg (StadtRAD) - Alex Kruse Advanced R Solutions - Malte Grosser</summary></entry><entry><title type="html">9th quarterly R meetup</title><link href="http://localhost:4000/blog/2017/05/16/r-meetup/" rel="alternate" type="text/html" title="9th quarterly R meetup" /><published>2017-05-16T19:00:00+02:00</published><updated>2017-05-16T19:00:00+02:00</updated><id>http://localhost:4000/blog/2017/05/16/r-meetup</id><content type="html" xml:base="http://localhost:4000/blog/2017/05/16/r-meetup/">&lt;p&gt;&lt;em&gt;16.05.2017 · 19:00 @ &lt;a href=&quot;http://fashion.cloud&quot;&gt;Fashion.Cloud&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/ol&gt;
+
+</content>
+<category term="meetup" />
+<summary>Aug 1, 2017 · 19:00 @ XING AGAOB:10th RUsersHH MeetupTalks:  Rcpp tutorial - Marvin N. WrightLightning talks:  crossword-pkg - Peter Meißner  r2anki-pkg - Henning Bumann (Link to r2anki-Repository)  Visualization of usage of bike sharing network in Hamburg (StadtRAD) - Alex Kruse  Advanced R Solutions - Malte Grosser</summary>
+</entry>
+<entry>
+<title>9th quarterly R meetup</title>
+<link href="http://localhost:4000/blog/2017/05/16/r-meetup/" rel="alternate" type="text/html" title="9th quarterly R meetup" />
+<published>2017-05-16T19:00:00+02:00</published>
+<updated>2017-05-16T19:00:00+02:00</updated>
+<id>http://localhost:4000/blog/2017/05/16/r-meetup</id>
+<content type="html" xml:base="http://localhost:4000/blog/2017/05/16/r-meetup/">&lt;p&gt;&lt;em&gt;16.05.2017 · 19:00 @ &lt;a href=&quot;http://fashion.cloud&quot;&gt;Fashion.Cloud&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;talks&quot;&gt;Talks:&lt;/h3&gt;
 
@@ -62,7 +114,18 @@
 
 &lt;h3 id=&quot;aob&quot;&gt;AOB:&lt;/h3&gt;
 
-&lt;p&gt;Filming of Talks.&lt;/p&gt;</content><author><name>rusershamburg</name></author><category term="meetup" /><summary type="html">16.05.2017 · 19:00 @ Fashion.Cloud Talks: H2O Deep Water - Making Deep Learning Accessible to Everyone - Jo-fai Chow Forecasting and the Tidyverse - Janko Thyson, Henning Bumann Lightning talks: snakecase-pkg - Malte Grosser Intro to blogdown-pkg - Henning Bumann AOB: Filming of Talks.</summary></entry><entry><title type="html">8th Quarterly R Users Hamburg Meetup</title><link href="http://localhost:4000/blog/2017/02/21/r-meetup/" rel="alternate" type="text/html" title="8th Quarterly R Users Hamburg Meetup" /><published>2017-02-21T19:00:00+01:00</published><updated>2017-02-21T19:00:00+01:00</updated><id>http://localhost:4000/blog/2017/02/21/r-meetup</id><content type="html" xml:base="http://localhost:4000/blog/2017/02/21/r-meetup/">&lt;p&gt;&lt;em&gt;21.02.2017 · 19:00 @ &lt;a href=&quot;http://hamburg.socialimpactlab.eu/kontakt&quot;&gt;Social Impact Lab&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Filming of Talks.&lt;/p&gt;
+</content>
+<category term="meetup" />
+<summary>16.05.2017 · 19:00 @ Fashion.CloudTalks:  H2O Deep Water - Making Deep Learning Accessible to Everyone - Jo-fai Chow  Forecasting and the Tidyverse - Janko Thyson, Henning BumannLightning talks:  snakecase-pkg - Malte Grosser  Intro to blogdown-pkg - Henning BumannAOB:Filming of Talks.</summary>
+</entry>
+<entry>
+<title>8th Quarterly R Users Hamburg Meetup</title>
+<link href="http://localhost:4000/blog/2017/02/21/r-meetup/" rel="alternate" type="text/html" title="8th Quarterly R Users Hamburg Meetup" />
+<published>2017-02-21T19:00:00+01:00</published>
+<updated>2017-02-21T19:00:00+01:00</updated>
+<id>http://localhost:4000/blog/2017/02/21/r-meetup</id>
+<content type="html" xml:base="http://localhost:4000/blog/2017/02/21/r-meetup/">&lt;p&gt;&lt;em&gt;21.02.2017 · 19:00 @ &lt;a href=&quot;http://hamburg.socialimpactlab.eu/kontakt&quot;&gt;Social Impact Lab&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;talks&quot;&gt;Talks:&lt;/h3&gt;
 
@@ -80,4 +143,9 @@
 
 &lt;h3 id=&quot;aob&quot;&gt;AOB:&lt;/h3&gt;
 
-&lt;p&gt;We’re applying for sponsorship- what does this mean for you?&lt;/p&gt;</content><author><name>rusershamburg</name></author><category term="meetup" /><summary type="html">21.02.2017 · 19:00 @ Social Impact Lab Talks: Data Transformation in R - The Tidyverse-Approach of Organizing Data - Daniel Lüdecke WhatsappR Package - Boris L.S. Lightning talks: Data science for social impact - Janko Thyson Interactive spatial clusters - Malte Grosser AOB: We’re applying for sponsorship- what does this mean for you?</summary></entry></feed>
+&lt;p&gt;We’re applying for sponsorship- what does this mean for you?&lt;/p&gt;
+</content>
+<category term="meetup" />
+<summary>21.02.2017 · 19:00 @ Social Impact LabTalks:  Data Transformation in R - The Tidyverse-Approach of Organizing Data - Daniel Lüdecke  WhatsappR Package - Boris L.S.Lightning talks:  Data science for social impact - Janko Thyson  Interactive spatial clusters - Malte GrosserAOB:We’re applying for sponsorship- what does this mean for you?</summary>
+</entry>
+</feed>

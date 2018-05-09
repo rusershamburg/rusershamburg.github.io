@@ -66,7 +66,7 @@ feed.xml as well as in feed_r.xml.
 
 
 
-### Building Page
+### Building Page (only needed for local previews)
 
 <!-- 
 **(1) re-building r-markdown**
@@ -145,3 +145,25 @@ git push
 
 ... to master branch of rusershamburg.github.io repo will result in an 
 update of https://rusershamburg.github.io with approximatly 10-20 seconds delay.
+
+## stats
+
+The stats folder hosts two kinds of files: .json-files which store data that might be used within the webpage and .R-scripts that are triggered to collect data. 
+
+**Beware!** the .R-scripts are aimed at being used by a remote worker - a server - and might do potential destructive things like `git checkout master`, `git pull`, `git add`, `git commit` and `git push`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
