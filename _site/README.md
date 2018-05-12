@@ -153,13 +153,105 @@ The stats folder hosts two kinds of files: .json-files which store data that mig
 **Beware!** the .R-scripts are aimed at being used by a remote worker - a server - and might do potential destructive things like `git checkout master`, `git pull`, `git add`, `git commit` and `git push`.
 
 
+## Folder Structure
+
+## / 
+
+The root of the page's source files. Almost anything in root will be compiled into _site. Compilation means that content (e.g. in the form of html and markdown files in the page root) will be matched with layout templates, SASS files filled with html and all liquid statements are evaluated (i.e. the stuff in double curly braces: `{{ varaible }}`). 
+
+As rule of thumb anything that is not prepended with an underscore (including files in ) is copied/compiled as-is into _site. Everything that has an underscore has some special logic and might get pre-process-re-arranged before finding its way into _site - e.g. _posts gets compiled into the blog folder and blog than gets cpopied into _site. 
 
 
 
+## _site
+
+That's where `jekyll build` builds the site into - a preview of what is to be deployed on rusershamburg.github.io. Folder was excluded via `.gitignore` since Github will build this part again anyways. 
+
+
+## _includes
+
+HTML and JS snippets that can be included anywhere via liquid statements like this: `{% include meetup_group_stats.html %}` 
+
+
+## _layouts
+
+Layouts live here. Content can use layouts requesting them in a yaml-header: 
+
+```yaml
+---
+layout: blank
+---
+```
+
+Layouts specify where the content goes with a liquid snippet requesting the content variable:
+
+```
+...
+{{ content }}
+...
+```
+
+Layouts can themselfes use layouts. 
+
+
+## _posts
+
+Blog posts live here.
+
+
+## _sass
+
+SASS-files live here that will be compiled to css or can be included by other SASS-files - e.g. _a
+
+
+## assets
+
+The place to put assests like images, styles, Javascript use by the site. 
+
+
+## blog 
+
+Contains the front page for the blog posts. 
+
+
+## rmd_posts
+
+A place 'stage' posts written in RMarkdown. RMarkdown has to be compiled to Markdown and than put into _posts.
+
+## stats
+
+The page's data, statistics and analytics department: code that gathers data as well as data files live here. 
+
+## _config.yml
+
+The page's config - this sets options for Jekyll to know how to compile - or put another way: this file sets global varaibles that later on are available in liquid. 
+
+## index.md, archive.html, blogroll.html
+
+The site's (main) pages - do not forget to add them to `_config.yml`.
+
+
+## feed_r.xml
+
+Jekyll will automatically wrap up all blog posts into an Atom (think RSS successor) feed: `feed.xml`. Now `feed_r.xml` is an Atom feed that consists of an subset of posts - namely only those that have been provisioned with an "rstats" tag in the yaml header: 
+
+```
+---
+...
+tags:
+    - rstats
+    - package
+    - convenience
+...
+---
+```
 
 
 
+# More
 
+- **Jekyll:** https://jekyllrb.com/docs/home/
+- **Liquid:** https://learn.cloudcannon.com/jekyll/introduction-to-liquid/
 
 
 

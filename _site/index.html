@@ -18,20 +18,15 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     
     <!-- CSS -->
-    <link href="/basic.css" rel="stylesheet">
-    <link href="/highlight.css" rel="stylesheet">
-    <link href="/index.css" rel="stylesheet">
-    <link href="/ts_plot.css" rel="stylesheet">
+    <link href="/assets/css/basic.css" rel="stylesheet">
+    <link href="/assets/css/highlight.css" rel="stylesheet">
+    <link href="/assets/css/index.css" rel="stylesheet">
+    <link href="/assets/css/ts_plot.css" rel="stylesheet">
 
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
 
-
-    <!-- feed meta: -->
-    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="" />
-    <script src="//https-rusershamburg-github-io.disqus.com/embed.js" async></script>
-    
   </head>
 
   <body>
@@ -56,50 +51,6 @@
     </header>
     <div>
 <div style="margin-bottom: 30px;"> ... to the home of the R Users Hamburg (Meetup) Group. Founded in 2015 the group holds regular quarterly meetings in various locations across Hamburg to foster knowledge exchange and networking within the local R community.</div>
-
-<!-- plotting -->
-<script src="assets/js/ts_plot_event_handler.js"></script>
-
-<script src="assets/js/ts_plot.js"></script>
-
-<!-- container for plots -->
-<div id="plot_group_members" style="
-    width: 49%; 
-    height: 150px; 
-    text-align: center;
-    display: inline-block;
-    ">
-</div>
-
-<div id="plot_event_attendance" style="
-    width: 49%; 
-    height: 150px; 
-    text-align: center;
-    display: inline-block;
-    ">
-</div>
-
-<!-- do plot -->
-<script>
-  ts_plot(
-    element_id = "plot_group_members",
-    data_source = "https://rusershamburg.github.io/stats/members_csv.csv",
-    time_column = "date",
-    ts_columns = "count",
-    title = "Group members"
-  );
-
-  ts_plot(
-    element_id = "plot_event_attendance",
-    data_source = "https://rusershamburg.github.io/stats/events_short_csv.csv",
-    time_column = "local_date",
-    ts_columns = "yes_rsvp_count",
-    title = "Event attendence"
-  );
-
-  $(window).trigger('resize');
-
-</script>
 
 <div id="meetup_group_description"></div>
 
@@ -171,6 +122,50 @@ $(document).ready(function(){
 });
 </script>
 
+<h2 id="group-statistics">Group Statistics</h2>
+
+<!-- plotting -->
+<script src="assets/js/ts_plot_event_handler.js"></script>
+
+<script src="assets/js/ts_plot.js"></script>
+
+<!-- container for plots -->
+<div id="plot_group_members" class="plot_half_width" style="
+    height: 150px; 
+    text-align: center;
+    display: inline-block;
+    ">
+</div>
+
+<div id="plot_event_attendance" class="plot_half_width" style="
+    height: 150px; 
+    text-align: center;
+    display: inline-block;
+    ">
+</div>
+
+<!-- do plot -->
+<script>
+  ts_plot(
+    element_id = "plot_group_members",
+    data_source = "https://rusershamburg.github.io/stats/members_csv.csv",
+    time_column = "date",
+    ts_columns = "count",
+    title = "Group members"
+  );
+
+  ts_plot(
+    element_id = "plot_event_attendance",
+    data_source = "https://rusershamburg.github.io/stats/events_short_csv.csv",
+    time_column = "local_date",
+    ts_columns = "yes_rsvp_count",
+    title = "Event attendence"
+  );
+
+  $(window).trigger('resize');
+
+</script>
+
 
     </div>
     
@@ -182,7 +177,12 @@ $(document).ready(function(){
 </main>
 
     
-   
+
+    
+    <!-- feed meta: -->
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="" />
+    <script src="//https-rusershamburg-github-io.disqus.com/embed.js" async></script>
+    
   </body>
 
 </html>

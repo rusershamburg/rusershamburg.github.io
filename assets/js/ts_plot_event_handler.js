@@ -97,7 +97,7 @@ ts_plot_event_handler = function (
         .call(d3.axisBottom(x).tickSize(0).ticks(5));
 
       svg.append("g")
-        .attr("class", "plot_second")
+        .attr("class", "plot_second xaxis")
         .call(d3.axisBottom(x).ticks(0).tickSize(0));
 
       // Add the Y Axis
@@ -141,8 +141,8 @@ ts_plot_event_handler = function (
         .on("mouseover", function (d) {
           div.transition()
             .duration(200)
-            .style("opacity", .9);
-          div.html(formatTime(d[time_column]) + "<br/>" + d[ts_columns[0]])
+            .style("opacity", 0.9);
+          div.html(d[ts_columns[0]] + "<br/>" + formatTime(d[time_column]))
             .style("left", (d3.event.pageX + 15) + "px")
             .style("top", (d3.event.pageY + 15) + "px");
         })
