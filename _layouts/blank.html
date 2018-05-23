@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
   <!-- layout: blank.html -->
+
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <meta charset="{{ site.encoding }}">
     <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}">
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    
+
 
     <title>{% if page.title %} {{ page.title }} › {% endif %}{{ site.title }}</title>
-    
+
     <link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url}}">
-    
+
     <!-- font and icons -->
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300,900italic,400italic"
+      rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet">
+
     <!-- CSS -->
     <link href="{{ '/assets/css/basic.css' | prepend: site.baseurl }}" rel="stylesheet">
     <link href="{{ '/assets/css/highlight.css' | prepend: site.baseurl }}" rel="stylesheet">
@@ -27,36 +30,83 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
 
+    <script type="text/javascript">
+      function slack_request(){
+        $('#slack_request').submit();
+        $("#slack_request_div").remove()
+        $("article").prepend('<div id="submitted" style="text-align:center;color:darkseagreen;"><h1>Request Submitted</h1>-ok-</div>');
+        $("article").show();
+        setTimeout(function () {
+          $("#submitted").slideUp(400);
+        }, 5000);
+       };
+
+      window.onload = function () {
+
+        $("a[href='#nolink']")
+          .on(
+            "click",
+            function () {
+              $("article")
+              .hide(); 
+              $("main")
+              .append(
+                '<div id="slack_request_div">' +
+                "<h1>Request Slack Access</h1>" +
+                '<form id="slack_request" target="_blank" action="https://fillouttheblanks.com/api/ruhhslack">' +
+                'name:<br>' +
+                '<input type="text" name="name" value="FirstName LastName">' +
+                '<br>' +
+                'email:<br>' +
+                '<input type="email" name="email" value="name@example.com">' +
+                '<br><br>' +
+                '<input type="button" onclick="slack_request()" value="Submit">' +
+                '</form>'+
+                '</div>'
+              );
+              return false;
+            }
+          )
+      }
+    </script>
+
   </head>
 
   <body>
     <header>
       <h1>
-        <img src="https://rusershamburg.github.io/assets/img/logo_rusershamburg_w.png"/>
+        <img src="https://rusershamburg.github.io/assets/img/logo_rusershamburg_w.png" />
         <a href="{{ site.baseurl  }}">{{ site.title | replace_first: 'R ', '' }}</a>
-        </h1>
+      </h1>
       <nav>
-        <div>{% for path in site.navigation %}{% assign node = site.pages | where: "path", path | first %}<a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>{% endfor %}</div>
-        <div>{% for link_hash in site.links %}{% for link in link_hash %}<a href="{{ link[1] }}"><i class="fa fa-{{ link[0] }}"></i></a>{% endfor %}{% endfor %}</div>
+        <div>{% for path in site.navigation %}{% assign node = site.pages | where: "path",
+          path | first %}
+          <a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>{% endfor %}</div>
+        <div>{% for link_hash in site.links %}{% for link in link_hash %}
+          <a href="{{ link[1] }}">
+            <i class="fa fa-{{ link[0] }}"></i>
+          </a>{% endfor %}{% endfor %}</div>
       </nav>
     </header>
-    
+
     <!-- content -->
-    {{ content }}
-    {% if page.previous.url or page.next.url %}
+    {{ content }} {% if page.previous.url or page.next.url %}
     <footer>
-        {% if page.next.url %}<a href="{{ page.next.url | prepend: site.baseurl }}">« {{ page.next.title }}</a>{% else %} <span></span> {% endif %}
-        {% if page.previous.url %}<a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }} »</a>{% else %} <span></span> {% endif %}
+      {% if page.next.url %}
+      <a href="{{ page.next.url | prepend: site.baseurl }}">« {{ page.next.title }}</a>{% else %}
+      <span></span> {% endif %} {% if page.previous.url %}
+      <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }} »</a>{% else %}
+      <span></span> {% endif %}
     </footer>
     {% endif %}
 
-    
+
     <!-- feed meta: -->
-    {% feed_meta %}
-    {% if site.comments.disqus and page.comments %}<script src="//{{ site.comments.disqus }}.disqus.com/embed.js" async></script>{% endif %}
-    {% if site.comments.isso and page.comments %}<script data-isso="http://{{ site.comments.isso }}" src="//{{ site.comments.isso }}/js/embed.min.js"></script>{% endif %}
+    {% feed_meta %} {% if site.comments.disqus and page.comments %}
+    <script src="//{{ site.comments.disqus }}.disqus.com/embed.js"
+      async></script>{% endif %} {% if site.comments.isso and page.comments %}
+    <script data-isso="http://{{ site.comments.isso }}"
+      src="//{{ site.comments.isso }}/js/embed.min.js"></script>{% endif %}
   </body>
 
 </html>
-
-

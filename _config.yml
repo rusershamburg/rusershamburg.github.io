@@ -31,6 +31,7 @@ links: # see http://fontawesome.io/icons/#brand for all possible icons
   - twitter: "https://twitter.com/rusershamburg"
   - github: "https://github.com/rusershamburg"
   - youtube: "https://www.youtube.com/channel/UCC12M-Yh9M5Hm6e1PAHt6zQ/videos"
+  - slack: "#nolink"
 
 
 defaults: [
